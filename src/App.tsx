@@ -1,9 +1,10 @@
+import { Greet } from './components/Greet/Greet';
 import styles from './App.module.scss';
 
 function App() {
   return (
     <section className={styles.app}>
-      <h1>JEST</h1>
+      <Greet />
     </section>
   );
 }

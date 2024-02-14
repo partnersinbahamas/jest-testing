@@ -1,0 +1,14 @@
+.greet {
+  padding: 10px;
+  background-color: #eee;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+
+  transition: background-color .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ddd;
+  };
+};

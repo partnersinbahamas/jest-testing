@@ -1,9 +1,13 @@
 import styles from './Greet.module.scss';
 
-export const Greet = () => {
+type Props = {
+  name?: string,
+};
+
+export const Greet: React.FC<Props> = ({ name = '' }) => {
   return (
-    <h3 className={styles.greet}>
-      Jest - simple test
-    </h3>
+    <h1 className={styles.greet}>
+      {name} JEST
+    </h1>
   );
 };

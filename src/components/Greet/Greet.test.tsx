@@ -1,8 +1,14 @@
-import { render, screen } from "@testing-library/react";
-import { Greet } from "./Greet";
+import { Greet } from "./Greet"
+import { render, screen } from "@testing-library/react"
 
-test('greet jest implementation testing', () => {
+test('Greet renders corrected', () => {
   render(<Greet />);
-  const jestElement = screen.getByText('Jest - simple test');
-  expect(jestElement).toBeInTheDocument();
+  const textElement = screen.getByText('JEST');
+  expect(textElement).toBeInTheDocument();
 });
+
+test('Greet with the props name', () => {
+  render(<Greet name="Denys Bokov"/>)
+  const textElement = screen.getByText('Denys Bokov JEST')
+  expect(textElement).toBeInTheDocument();
+})

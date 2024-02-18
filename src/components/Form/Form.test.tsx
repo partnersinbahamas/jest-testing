@@ -22,6 +22,15 @@ describe.only('Form', () => {
     expect(selectElement).toBeInTheDocument();
   });
 
+  test('Tersm - renders correctly', () => {
+    render(<Form />);
+
+    const labelTermsElement = screen.getByLabelText('I agree to the terms and conditions',
+      { selector: 'input' },
+    );
+    expect(labelTermsElement).toBeInTheDocument();
+  })
+
   test('SubmitButton - renders correctly', () => {
     render(<Form />);
 

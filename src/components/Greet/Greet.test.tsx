@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react";
 describe('Greet', () => {
   test('renders correctly', () => {
     render(<Greet />);
-    const textElement = screen.getByText('JEST');
+    const textElement = screen.getByText('Guest JEST');
     expect(textElement).toBeInTheDocument();
   })
 

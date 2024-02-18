@@ -7,7 +7,7 @@ type Props = {
 export const Greet: React.FC<Props> = ({ name = '' }) => {
   return (
     <h1 className={styles.greet}>
-      {name} JEST
+      {name ? name : 'Guest'} JEST
     </h1>
   );
 };

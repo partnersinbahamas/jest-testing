@@ -7,7 +7,12 @@ function App() {
     <section className={styles.app}>
       <Greet />
 
-      <Form />
+      <main className={styles.main}>
+        <h3>Jop application form</h3>
+        <h4>Part - 1</h4>
+        
+        <Form />
+      </main>
     </section>
   );
 }

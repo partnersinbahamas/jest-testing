@@ -1,9 +1,13 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/jest/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('App', () => {
+  test('application render', () => {
+    render(<App />)
+    const jobTitleElement = screen.getByRole('heading', { name: 'Jop application form' });
+    expect(jobTitleElement).toBeInTheDocument(); 
+
+    const partTitleElement = screen.getByRole('heading', { name: 'Part - 1' });
+    expect(partTitleElement).toBeInTheDocument();
+  })
+})

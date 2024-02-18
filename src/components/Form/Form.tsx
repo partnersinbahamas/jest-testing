@@ -12,6 +12,12 @@ export const Form = () => {
         id="name"
       />
 
+      <TextInput
+        name='surname'
+        title='Surname'
+        id="surname"
+      />
+
       <SelectInput
         id='job-location'
         title='Job location'

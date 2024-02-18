@@ -1,15 +1,15 @@
 import { render, screen } from "@testing-library/react"
 import { Form } from "./Form";
 
-describe('Form', () => {
+describe.only('Form', () => {
   test('TextInput - renders correctly', () => {
     render(<Form />);
 
-    const labelElement = screen.getByText('Name');
-    expect(labelElement).toBeInTheDocument();
+    const nameElement = screen.getByRole('textbox', { name: 'Name' });
+    expect(nameElement).toBeInTheDocument();
 
-    const inputElement = screen.getByRole('textbox');
-    expect(inputElement).toBeInTheDocument();
+    const surName = screen.getByRole('textbox', { name: 'Surname' });
+    expect(surName).toBeInTheDocument();
   });
 
   test('SelectInput - renders correctly', () => {

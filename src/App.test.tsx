@@ -4,10 +4,10 @@ import App from './App';
 describe('App', () => {
   test('application render', () => {
     render(<App />)
-    const jobTitleElement = screen.getByRole('heading', { name: 'Jop application form' });
+    const jobTitleElement = screen.getByRole('heading', { level: 3});
     expect(jobTitleElement).toBeInTheDocument(); 
 
-    const partTitleElement = screen.getByRole('heading', { name: 'Part - 1' });
+    const partTitleElement = screen.getByRole('heading', { level: 4 });
     expect(partTitleElement).toBeInTheDocument();
   })
 })

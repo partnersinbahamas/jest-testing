@@ -10,7 +10,7 @@ type Props = {
 export const SelectInput: React.FC<Props> = ({ id, title, items }) => {
   return (
     <div className={styles.wrapper}>
-      <label htmlFor={id} className={styles.wrapper}>
+      <label htmlFor={id} className={styles.title}>
         {title}
       </label>
 

@@ -2,6 +2,7 @@ import { TextInput } from '../Inputs/TextInput/TextInput';
 import { SelectInput } from '../Inputs/SelectInput/SelectInput';
 import { places } from '../../helpers/variables';
 import styles from './Form.module.scss';
+import { Textarea } from '../Inputs/Textarea/Textarea';
 
 export const Form = () => {
   return (
@@ -23,6 +24,12 @@ export const Form = () => {
         id='job-location'
         title='Job location'
         items={places}
+      />
+
+      <Textarea
+        name='comment'
+        title='Comment'
+        id="comment"
       />
 
       <div>

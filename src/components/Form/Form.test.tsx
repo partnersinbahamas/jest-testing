@@ -15,7 +15,7 @@ describe('Form', () => {
   test('SelectInput - renders correctly', () => {
     render(<Form />);
 
-    const labelElement = screen.getByText('Job location');
+    const labelElement = screen.getByText('Job location'); // using for span, div, p
     expect(labelElement).toBeInTheDocument();
 
     const selectElement = screen.getByRole('combobox');
@@ -29,6 +29,13 @@ describe('Form', () => {
       { selector: 'input' },
     );
     expect(labelTermsElement).toBeInTheDocument();
+  })
+
+  test('Textarea - renders correctly', () => {
+    render(<Form />);
+
+    const textareaElement = screen.getByDisplayValue('Textarea value');
+    expect(textareaElement).toBeInTheDocument();
   })
 
   test('SubmitButton - renders correctly', () => {

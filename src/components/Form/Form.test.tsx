@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react"
 import { Form } from "./Form";
 
-describe.only('Form', () => {
+describe('Form', () => {
   test('TextInput - renders correctly', () => {
     render(<Form />);
 

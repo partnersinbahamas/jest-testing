@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jest-testing/static/css/main.9ebb0e10.css",
-    "main.js": "/jest-testing/static/js/main.13eefb9e.js",
+    "main.css": "/jest-testing/static/css/main.fa5402a7.css",
+    "main.js": "/jest-testing/static/js/main.3e20ea7d.js",
     "static/js/592.5e8061c9.chunk.js": "/jest-testing/static/js/592.5e8061c9.chunk.js",
     "index.html": "/jest-testing/index.html",
-    "main.9ebb0e10.css.map": "/jest-testing/static/css/main.9ebb0e10.css.map",
-    "main.13eefb9e.js.map": "/jest-testing/static/js/main.13eefb9e.js.map",
+    "main.fa5402a7.css.map": "/jest-testing/static/css/main.fa5402a7.css.map",
+    "main.3e20ea7d.js.map": "/jest-testing/static/js/main.3e20ea7d.js.map",
     "592.5e8061c9.chunk.js.map": "/jest-testing/static/js/592.5e8061c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ebb0e10.css",
-    "static/js/main.13eefb9e.js"
+    "static/css/main.fa5402a7.css",
+    "static/js/main.3e20ea7d.js"
   ]
 }

@@ -5,7 +5,7 @@ describe.only('Form', () => {
   test('TextInput - renders correctly', () => {
     render(<Form />);
 
-    const nameElement = screen.getByRole('textbox', { name: 'Name' });
+    const nameElement = screen.getByPlaceholderText('Please enter your name...');
     expect(nameElement).toBeInTheDocument();
 
     const surName = screen.getByRole('textbox', { name: 'Surname' });

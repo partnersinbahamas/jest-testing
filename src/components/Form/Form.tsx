@@ -10,6 +10,7 @@ export const Form = () => {
         name='name'
         title='Name'
         id="name"
+        placeholder='Please enter your name...'
       />
 
       <TextInput

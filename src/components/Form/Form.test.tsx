@@ -44,4 +44,11 @@ describe('Form', () => {
     const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
   });
+
+  test('Image - renders correctly', () => {
+    render(<Form />);
+
+    const imageElement = screen.getByAltText('image');
+    expect(imageElement).toBeInTheDocument();
+  })
 })

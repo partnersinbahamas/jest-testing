@@ -39,6 +39,8 @@ export const Form = () => {
         </label>
       </div>
 
+      <img src="https://via.placeholder.com/500" alt="image" />
+
       <button>Sumbit</button>
     </form>
   )

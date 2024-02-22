@@ -6,9 +6,6 @@ import { useState } from 'react';
 function App() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
 
-  const closeHanler = () => {
-    setIsClosed((current) => !current);
-  };
 
   return (
     <section className={styles.app}>
@@ -19,14 +16,15 @@ function App() {
         <h4>Part - 1</h4>
 
         <button
-          className={styles.close}
+          className={styles.closeButton}
           title="toggle"
-          onClick={closeHanler}
+          onClick={() => setIsClosed((current) => !current)}
         >
           X
         </button>
+
         
-        {isClosed && <Form />}
+        {isClosed && <span aria-label='form-wrapper'><Form /></span>}
       </main>
     </section>
   );

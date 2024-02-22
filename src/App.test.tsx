@@ -9,5 +9,8 @@ describe('App', () => {
 
     const partTitleElement = screen.getByRole('heading', { level: 4 });
     expect(partTitleElement).toBeInTheDocument();
+
+    const closeButtonElement = screen.getByTitle('toggle');
+    expect(closeButtonElement).toBeInTheDocument();
   })
 })

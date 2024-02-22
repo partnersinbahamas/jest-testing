@@ -19,5 +19,8 @@ describe('App', () => {
 
     await userEvent.click(closeButtonElement);
     expect(formElement).not.toBeVisible();
+
+    const jestLogoElement = screen.getByTestId('jest-logo');
+    expect(jestLogoElement).toBeInTheDocument();
   })
 })

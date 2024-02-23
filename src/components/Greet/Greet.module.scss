@@ -1,4 +1,5 @@
 .greet {
+  position: relative;
   padding: 10px;
   background-color: #eee;
   text-align: center;
@@ -12,3 +13,9 @@
     background-color: #ddd;
   };
 };
+
+.greetSkills {
+  position: absolute;
+  right: 30px;
+  top: -22.5%;
+}

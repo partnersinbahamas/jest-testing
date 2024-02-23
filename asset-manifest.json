@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/jest-testing/static/css/main.bb557f76.css",
-    "main.js": "/jest-testing/static/js/main.fe25345e.js",
+    "main.css": "/jest-testing/static/css/main.6338a30f.css",
+    "main.js": "/jest-testing/static/js/main.be4440a6.js",
     "static/js/592.5e8061c9.chunk.js": "/jest-testing/static/js/592.5e8061c9.chunk.js",
+    "static/media/React-logo.png": "/jest-testing/static/media/React-logo.8a6fc0a24a800d1e0f4a.png",
+    "static/media/JS-logo.png": "/jest-testing/static/media/JS-logo.0efdef26a1983b4a757e.png",
+    "static/media/html-logo.png": "/jest-testing/static/media/html-logo.36234ee9c85d4915e192.png",
+    "static/media/CSS_logo.png": "/jest-testing/static/media/CSS_logo.58dfbebae4a02001b50e.png",
     "static/media/jest-logo.webp": "/jest-testing/static/media/jest-logo.852a3cdea67e3e40c5a1.webp",
     "index.html": "/jest-testing/index.html",
-    "main.bb557f76.css.map": "/jest-testing/static/css/main.bb557f76.css.map",
-    "main.fe25345e.js.map": "/jest-testing/static/js/main.fe25345e.js.map",
+    "main.6338a30f.css.map": "/jest-testing/static/css/main.6338a30f.css.map",
+    "main.be4440a6.js.map": "/jest-testing/static/js/main.be4440a6.js.map",
     "592.5e8061c9.chunk.js.map": "/jest-testing/static/js/592.5e8061c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb557f76.css",
-    "static/js/main.fe25345e.js"
+    "static/css/main.6338a30f.css",
+    "static/js/main.be4440a6.js"
   ]
 }

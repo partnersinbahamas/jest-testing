@@ -15,8 +15,17 @@ describe('Form', () => {
   test('SelectInput - renders correctly', () => {
     render(<Form />);
 
-    const labelElement = screen.getByText('Job location'); // using for span, div, p
+    const labelElement = screen.getByText('Job location'); // using for span, div, p - with default
     expect(labelElement).toBeInTheDocument();
+
+    const labelElement2 = screen.getByText(/Job location/); // using for span, div, p - with regex
+    expect(labelElement2).toBeInTheDocument();
+
+    const labelElement3 = screen.getByText(/job location/i); // using for span, div, p - with regex + ignore case
+    expect(labelElement3).toBeInTheDocument();
+
+    const labelElement4 = screen.getByText((content) => content.startsWith('Job')); // using for span, div, p - with regex + ignore case
+    expect(labelElement4).toBeInTheDocument();
 
     const selectElement = screen.getByRole('combobox');
     expect(selectElement).toBeInTheDocument();

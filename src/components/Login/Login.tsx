@@ -1,7 +1,13 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const Login = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoggedIn(false);
+    }, 1001)
+  }, []);
 
   return (
     <div>

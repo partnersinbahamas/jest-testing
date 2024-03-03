@@ -1,5 +1,26 @@
 .counter {
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
+position: relative;
+}
+
+.container {
   display: flex;
   align-items: center;
   gap: 5px;
+};
+
+.setter {
+  position: absolute;
+  bottom: -50px;
+  left: 15px;
+
+  display: flex;
+  align-items: flex-end;
+
+  >button {
+    padding: 0;
+    height: 23px;
+  }
 }

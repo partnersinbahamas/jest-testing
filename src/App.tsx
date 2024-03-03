@@ -3,29 +3,34 @@ import { Form } from './components/Form/Form';
 import styles from './App.module.scss';
 import jestLogo from './images/jest-logo.webp';
 import { useState } from 'react';
+import { AppProvider } from './components/providers/AppProvider/AppProvider';
+import { MuiMode } from './components/MuiMode/MuiMode';
 
 function App() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
 
 
   return (
-    <section className={styles.app}>
-      <Greet />
+    <AppProvider>
+      <section className={styles.app}>
+        <Greet />
+        <MuiMode />
 
-      <main className={styles.main}>
-        <h3>Jop application form</h3>
-        <h4>Part - 1</h4>
-        <button
-          className={styles.closeButton}
-          title="toggle"
-          onClick={() => setIsClosed((current) => !current)}
-        >
-          X
-        </button>
-        {isClosed && <span aria-label='form-wrapper'><Form /></span>}
-        <img src={jestLogo} data-testid="jest-logo"/>
-      </main>
-    </section>
+        <main className={styles.main}>
+          <h3>Jop application form</h3>
+          <h4>Part - 1</h4>
+          <button
+            className={styles.closeButton}
+            title="toggle"
+            onClick={() => setIsClosed((current) => !current)}
+          >
+            X
+          </button>
+          {isClosed && <span aria-label='form-wrapper'><Form /></span>}
+          <img src={jestLogo} data-testid="jest-logo"/>
+        </main>
+      </section>
+    </AppProvider>
   );
 }
 

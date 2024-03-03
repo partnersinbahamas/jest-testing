@@ -6,10 +6,9 @@ import { useState } from 'react';
 import { AppProvider } from './components/providers/AppProvider/AppProvider';
 import { MuiMode } from './components/MuiMode/MuiMode';
 
+
 function App() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
-
-
   return (
     <AppProvider>
       <section className={styles.app}>

@@ -12,11 +12,11 @@ export const Login = () => {
   return (
     <div>
       {isLoggedIn ? (
-        <button onClick={() => setIsLoggedIn(false)}>
+        <button onClick={() => setIsLoggedIn(false)} tabIndex={-1}>
           Log-in
         </button>
       ) : (
-        <button onClick={() => setIsLoggedIn(true)}>
+        <button onClick={() => setIsLoggedIn(true)} tabIndex={-1}>
           Log-out
         </button>
       )}

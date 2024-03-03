@@ -57,4 +57,32 @@ describe('Counter' , () => {
     expect(counterElement).toHaveTextContent(typedValue);
     expect(inputElement).toHaveValue('');
   });
+  it('render with keyboard => tab', async() => {
+    render(<Counter />);
+
+    const decrementButtonElement = screen.getByRole('button', { name: 'Decrement' });
+    const incrementButtonElement = screen.getByRole('button', { name: 'Increment' });
+    const inputElement = screen.getByRole('textbox', {name: 'Set amount'});
+    const setButtonElement = screen.getByRole('button', { name: 'Set' });
+
+    expect(decrementButtonElement).not.toHaveFocus();
+    expect(incrementButtonElement).not.toHaveFocus();
+    expect(inputElement).not.toHaveFocus();
+    expect(setButtonElement).not.toHaveFocus();
+
+    await user.tab();
+    expect(decrementButtonElement).toHaveFocus();
+
+    await user.tab();
+    expect(decrementButtonElement).not.toHaveFocus();
+    expect(incrementButtonElement).toHaveFocus();
+
+    await user.tab();
+    expect(incrementButtonElement).not.toHaveFocus();
+    expect(inputElement).toHaveFocus();
+
+    await user.tab();
+    expect(inputElement).not.toHaveFocus();
+    expect(setButtonElement).toHaveFocus();
+  });
 })

@@ -21,6 +21,9 @@
 }
 
 .greetSkills {
+  display: flex;
+  align-items: center;
+  gap: 50px;
   position: absolute;
   right: 30px;
   top: -22.5%;

@@ -8,14 +8,12 @@ describe('Login', () => {
     const logInButtonElement = screen.getByRole('button', {name: 'Log-in'});
     expect(logInButtonElement).toBeInTheDocument();
   });
-
   it('renders with Log-out', () => {
     render(<Login />);
 
     const logOutButtonElement = screen.queryByRole('button', {name: 'Log-out'});
     expect(logOutButtonElement).not.toBeInTheDocument();
   });
-
   it('renders with async timeout', async() => {
     render(<Login />);
 

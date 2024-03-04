@@ -11,7 +11,6 @@ describe('Form', () => {
     const surName = screen.getByRole('textbox', { name: 'Surname' });
     expect(surName).toBeInTheDocument();
   });
-
   test('SelectInput - renders correctly', () => {
     render(<Form />);
 
@@ -30,7 +29,6 @@ describe('Form', () => {
     const selectElement = screen.getByRole('combobox');
     expect(selectElement).toBeInTheDocument();
   });
-
   test('Tersm - renders correctly', () => {
     render(<Form />);
 
@@ -39,21 +37,18 @@ describe('Form', () => {
     );
     expect(labelTermsElement).toBeInTheDocument();
   })
-
   test('Textarea - renders correctly', () => {
     render(<Form />);
 
     const textareaElement = screen.getByDisplayValue('Textarea value');
     expect(textareaElement).toBeInTheDocument();
   })
-
   test('SubmitButton - renders correctly', () => {
     render(<Form />);
 
     const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
   });
-
   test('Image - renders correctly', () => {
     render(<Form />);
 

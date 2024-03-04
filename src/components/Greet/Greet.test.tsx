@@ -7,7 +7,6 @@ describe('Greet', () => {
     const textElement = screen.getByText('Guest JEST');
     expect(textElement).toBeInTheDocument();
   })
-
   describe('Greet - name', () => {
     test('render with the name', () => {
       const testName = 'DB';

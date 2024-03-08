@@ -5,15 +5,20 @@ import jestLogo from './images/jest-logo.webp';
 import { useState } from 'react';
 import { AppProvider } from './components/providers/AppProvider/AppProvider';
 import { MuiMode } from './components/MuiMode/MuiMode';
+import { Truthy } from './components/Truthy/Truthy';
 
 
 function App() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
+
+  const [isTruthy, setIsTruthy] = useState(false);
+
   return (
     <AppProvider>
       <section className={styles.app}>
         <Greet />
         <MuiMode />
+        <Truthy truthy={isTruthy} handleFalse={setIsTruthy} handleTrue={setIsTruthy} />
 
         <main className={styles.main}>
           <h3>Jop application form</h3>

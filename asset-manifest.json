@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jest-testing/static/css/main.5e984a49.css",
-    "main.js": "/jest-testing/static/js/main.f3beea92.js",
+    "main.css": "/jest-testing/static/css/main.664c0ecf.css",
+    "main.js": "/jest-testing/static/js/main.767521bc.js",
     "static/js/592.5e8061c9.chunk.js": "/jest-testing/static/js/592.5e8061c9.chunk.js",
     "static/media/React-logo.png": "/jest-testing/static/media/React-logo.8a6fc0a24a800d1e0f4a.png",
     "static/media/JS-logo.png": "/jest-testing/static/media/JS-logo.0efdef26a1983b4a757e.png",
@@ -9,12 +9,12 @@
     "static/media/CSS_logo.png": "/jest-testing/static/media/CSS_logo.58dfbebae4a02001b50e.png",
     "static/media/jest-logo.webp": "/jest-testing/static/media/jest-logo.852a3cdea67e3e40c5a1.webp",
     "index.html": "/jest-testing/index.html",
-    "main.5e984a49.css.map": "/jest-testing/static/css/main.5e984a49.css.map",
-    "main.f3beea92.js.map": "/jest-testing/static/js/main.f3beea92.js.map",
+    "main.664c0ecf.css.map": "/jest-testing/static/css/main.664c0ecf.css.map",
+    "main.767521bc.js.map": "/jest-testing/static/js/main.767521bc.js.map",
     "592.5e8061c9.chunk.js.map": "/jest-testing/static/js/592.5e8061c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e984a49.css",
-    "static/js/main.f3beea92.js"
+    "static/css/main.664c0ecf.css",
+    "static/js/main.767521bc.js"
   ]
 }

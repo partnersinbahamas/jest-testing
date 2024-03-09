@@ -8,16 +8,15 @@ export const Users = () => {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((res) => res.json())
-      .then(data => setUsers(data.map(({name}: any) => ({ name }))))
+      .then(data => setUsers(data.map(({name}: {[key: string]: string}) => ({name}) )))
       .catch((error) => setError('Fatching error'))
   }, []);
 
   return (
     <section className={styles.wrapper}>
       <h1>Users</h1>
-      {error ? (
-        <p className={styles.error}>{error}</p>
-      ) : (
+      {error && <p className={styles.error}>{error}</p>}
+
         <ul className={styles.list}>
           {users.map((user: any) => (
             <li
@@ -28,7 +27,6 @@ export const Users = () => {
             </li>
           ))}
         </ul>
-      )}
     </section>
   )
 }

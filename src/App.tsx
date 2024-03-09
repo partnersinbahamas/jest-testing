@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { AppProvider } from './components/providers/AppProvider/AppProvider';
 import { MuiMode } from './components/MuiMode/MuiMode';
 import { Truthy } from './components/Truthy/Truthy';
+import { Users } from './components/Users/Users';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Greet />
         <MuiMode />
         <Truthy truthy={isTruthy} handleFalse={setIsTruthy} handleTrue={setIsTruthy} />
+        <Users />
+
 
         <main className={styles.main}>
           <h3>Jop application form</h3>

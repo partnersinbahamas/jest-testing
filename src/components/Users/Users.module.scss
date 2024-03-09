@@ -1,0 +1,29 @@
+.wrapper {
+  position: absolute;
+  max-width: 300px;
+  padding-left: 20px;
+}
+
+.error {
+  color: red;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 10px;
+}
+
+.user {
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
